@@ -15,5 +15,20 @@ namespace streamin
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

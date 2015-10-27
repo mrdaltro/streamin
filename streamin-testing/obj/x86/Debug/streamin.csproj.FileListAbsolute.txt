@@ -1,0 +1,7 @@
+C:\streamin\streamin-testing\bin\Debug\streamin.exe
+C:\streamin\streamin-testing\bin\Debug\streamin.pdb
+C:\streamin\streamin-testing\obj\x86\Debug\streamin.Form1.resources
+C:\streamin\streamin-testing\obj\x86\Debug\streamin.Properties.Resources.resources
+C:\streamin\streamin-testing\obj\x86\Debug\streamin.csproj.GenerateResource.Cache
+C:\streamin\streamin-testing\obj\x86\Debug\streamin.exe
+C:\streamin\streamin-testing\obj\x86\Debug\streamin.pdb
