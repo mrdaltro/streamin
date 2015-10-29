@@ -1,16 +1,16 @@
 <center><img src="http://i.imgur.com/eWeHntM.png" height="160vh" /></center>
-<p>Want to do a good platform for any video stream catalog.
+<p>Quer ser uma boa plataforma para qualquer catálogo de vídeos, podcasts, séries.
 
 <hr>
 
-<b>What I am</b>
+<b>Quem eu sou</b>
 
-Just a project. Using C#, WinForms and XML (without databases), streamin wants to be a simple platform, where any user can do a XML list of your own video streams. With this, the amateur cinematography will have a free and organized place to allocate their works. 
+Apenas um projeto. Com C#, WinForms e XML (sem quaisquer databases), o streamin quer ser uma plataforma simples, onde qualquer usuário pode fazer uma lista XML com suas próprias transmissões de vídeo. Com isso, o cinema amador terá um local gratuito, livre e organizado para onde deixar seus trabalhos.
 
-This is an open project, and you can help me, collaborating and disclosing.
+Esse é um projeto aberto, e você pode me ajudar, colaborando e divulgando.
 
 <hr>
 
-<b>Downloads! Where can I download it?</b>
+<b>Donwloads! Onde posso baixá-lo?</b>
 
-It is a project under development, and while it isn't done, you can just help me doing codes, forking or cloning it (ya, I like to see my work as base for another).
+Este projeto está em desenvolvimento, e por hora não está concluido. Você pode me ajudar codificando, fazendo um fork ou clonando o mesmo (sim, eu gosto de ver meu trabalho como base para outros).
