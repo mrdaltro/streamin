@@ -20,6 +20,38 @@ namespace streamin
         private void Form1_Load(object sender, EventArgs e)
         {
             Center_Text();
+
+            ListViewItem testeItem = new ListViewItem();
+            testeItem.Text = "teste";
+            testeItem.ForeColor = SystemColors.WindowFrame;
+            listView1.Items.Add(testeItem);
+
+            foreach(Control x in this.Controls) {
+                Control j = x;
+           
+                if (x is TableLayoutPanel)
+                {
+                    try
+                    {
+                        Control y = x.Controls.Find("panel", true)[0];
+                        j = y;
+                    }
+
+                    catch
+                    {
+                        throw;
+                    }
+                }
+
+                if(!(j is TextBox)) {
+                    j.MouseDown += new MouseEventHandler(CaptureMouse);
+                }
+            }
+        }
+
+        private void CaptureMouse(object sender, MouseEventArgs e)
+        {
+            label1.Text = e.Location.X.ToString() + ", " + e.Location.Y.ToString();
         }
 
         /* Thanks for 'Ank_ush', from codeProject for the above method. */
@@ -58,6 +90,73 @@ namespace streamin
             }
         }
 
-        
+        private void textBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (textBox1.Text == "search bar")
+            {
+                textBox1.Text = null;
+            }
+        }
+
+        private void pictureBox2_MouseHover(object sender, EventArgs e)
+        {
+            double phase = 0.0;
+            PictureBox hover = new PictureBox();
+
+            hover.ImageLocation = Application.StartupPath + "\\resources\\line2hover.png";
+            hover.Location = pictureBox2.Location;
+            hover.Height = pictureBox2.Height;
+            hover.SizeMode = pictureBox2.SizeMode;
+            
+        }
+
+        private void listView1_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+            if (e.IsSelected)
+            {
+                e.Item.Selected = false;
+
+                panel2.Controls.Remove(listView1);
+                panel2.Refresh();
+                panel2.Controls.Add(listView1);
+
+                /*ListView clone = new ListView();
+
+                for (int i = 0; i < listView1.Items.Count - 1; i++)
+                {
+                    ListViewItem x = new ListViewItem();
+                    
+                }
+
+                //clone.Items.AddRange(listView1.Items);
+                clone.Location = listView1.Location;
+                clone.Size = listView1.Size;
+                clone.Font = listView1.Font;
+                clone.ForeColor = listView1.ForeColor;
+                clone.BackColor = listView1.BackColor;
+                clone.Dock = listView1.Dock;
+                clone.View = listView1.View;
+                clone.BorderStyle = listView1.BorderStyle;
+
+                listView1.Hide();*/
+            }
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            Rectangle algo = new Rectangle();
+            algo.Height = textBox1.Height;
+            algo.Width = textBox1.Width;
+            algo.X = textBox1.Bounds.X;
+            algo.Y = textBox1.Bounds.Y;
+
+
+            //label1.Text = algo.X.ToString() + "," + algo.Y.ToString();
+        }
+
+        private void tableLayoutPanel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -5,3 +5,6 @@ C:\streamin\streamin-testing\obj\x86\Debug\streamin.Properties.Resources.resourc
 C:\streamin\streamin-testing\obj\x86\Debug\streamin.csproj.GenerateResource.Cache
 C:\streamin\streamin-testing\obj\x86\Debug\streamin.exe
 C:\streamin\streamin-testing\obj\x86\Debug\streamin.pdb
+C:\streamin\streamin-testing\obj\x86\Debug\streamin.csprojResolveAssemblyReference.cache
+C:\streamin\streamin-testing\bin\Debug\resources\line2hover.png
+C:\streamin\streamin-testing\obj\x86\Debug\streamin.about.resources
