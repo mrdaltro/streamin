@@ -33,8 +33,9 @@ namespace streamin
                 {
                     try
                     {
-                        Control y = x.Controls.Find("panel", true)[0];
-                        j = y;
+                        Control[] y = new Control[1];
+                        y[0] = x.Controls.
+                        j = y[0];
                     }
 
                     catch
